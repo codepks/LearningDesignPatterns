@@ -5,11 +5,11 @@
 ```
 class Susbscribers{
 public:
-	Susbscribers(int userId)	{ this->userId = userId;}
+	Susbscribers(int userId)			{ this->userId = userId;}
 	~Susbscribers() = default;
 
-	void showMessage() { std::cout << message_; }
-	void setMessage(std::string message) { message_ = message; showMessage(); }
+	void showMessage() 				{ std::cout << message_; }
+	void setMessage(std::string message) 		{ message_ = message; showMessage(); }
 
 private:
 	int userId;
@@ -22,9 +22,10 @@ public:
 	YTChannel() = default;
 	~ YTChannel() = default;
 
-	YTChannel(const char* channelName)	{ name = channelName; }
+	YTChannel(const char* channelName)		{ name = channelName; }
 	void addSubscribers(Susbscribers subscriber)	{ subsGroup.push_back(subscriber); }
-	void sendNotification(const char* message) {
+	void sendNotification(const char* message)
+{
 
 		std::string msg = message;
 		for (auto& subs : subsGroup)
