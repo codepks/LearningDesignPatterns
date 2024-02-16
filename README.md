@@ -25,7 +25,7 @@ public:
 	YTChannel(const char* channelName)		{ name = channelName; }
 	void addSubscribers(Susbscribers subscriber)	{ subsGroup.push_back(subscriber); }
 	void sendNotification(const char* message)
-{
+	{
 
 		std::string msg = message;
 		for (auto& subs : subsGroup)
