@@ -1,6 +1,6 @@
 # LearningDesignPatterns
 
-# Observer Design Patter
+# Observer Design Pattern
 
 ```
 class Susbscribers{
