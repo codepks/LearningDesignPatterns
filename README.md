@@ -193,3 +193,12 @@ class Program
 - **CoffeeDecorator Class**: This is the abstract base class for decorators.
 - **MilkDecorator and SugarDecorator**: These classes extend the decorator and provide additional functionalities (milk and sugar).
 - **Main Method**: This demonstrates how to create a coffee order and decorate it with milk and sugar.
+
+## My Explaination
+- A coffee interface has been made with cost and description
+- A base implementation is required called `Coffee` on top of which we will decorate
+- Next we will make a template for Decorator class, thus, a `Decorator Abstract class` which can be used for milk or sugar
+- The decorator abstract class uses `interface coffee object` which plays an important part here
+- Every time we add a decoration object a `modified coffee class` is created which is passed on to next decoration
+- E.g. When we call Cost function, it triggers all the previous cost() function..how?
+- Because every _coffee interface pointer points to previous decorated coffee object 
